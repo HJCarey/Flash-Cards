@@ -1,0 +1,45 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/title_image_banana"
+        android:src="@drawable/title_banana" />
+
+    <TextView
+        android:id="@+id/register_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toProfile1"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginBottom="20dp"
+        android:text="@string/action_register"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/register_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_welcome"
+        android:layout_alignLeft="@+id/register_welcome"
+        android:layout_alignRight="@+id/register_welcome"
+        android:layout_marginBottom="14dp"
+        android:text="@string/action_register"
+        android:textSize="25sp" />
+    
+     <Button
+        android:id="@+id/toProfile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_profile" />
+
+</RelativeLayout>
