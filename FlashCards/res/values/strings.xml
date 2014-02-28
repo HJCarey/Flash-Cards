@@ -3,6 +3,15 @@
 
     <string name="app_name">Flash Cards</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="home_title">Flash Cards</string>
+	<string name="button_addDeck">Add Deck</string>
+	<string name="scroll_test1">Poop</string>
+    <string name="scroll_test2">Balls</string>
+    
+	<string name="adddeck_title">Adding New Deck</string>
+	<string name="adddeck_label">Add Deck</string>
+	<string name="adddeck_insertName">Name of Deck:</string>
+	<string name="adddeck_button_addCards">Add Cards</string>
+	<string name="save">Save</string>
+    
 </resources>

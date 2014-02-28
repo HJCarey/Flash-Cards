@@ -1,7 +1,13 @@
 package com.example.flashcards;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import android.content.Context;
+import android.util.Log;
 
 public class Deck {
 	
@@ -27,4 +33,19 @@ public class Deck {
 	public void removeCard(Card card) {
 		this.cards.remove(card);
 	}
-}
+	
+	public void saveDeck(Context context) {
+		File deckFile = new File(this.getDeckName());
+		
+		if (!deckFile.exists()) {
+			try {
+				deckFile.createNewFile();
+				FileOutputStream fos = context.openFileOutput(this.deckName, Context.MODE_PRIVATE);
+				fos.write(this.deckName.getBytes());
+				fos.close();
+			} catch (IOException e) {
+				Log.e("Exception", "User already exists");
+			}//end catch
+		}//end if
+	}//end saveDeck
+}//end class

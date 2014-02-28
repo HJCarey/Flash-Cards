@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/adddeck_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/adddeck_title"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/adddeck_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adddeck_textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/adddeck_insertName"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/adddeck_addDeck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adddeck_textView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/adddeck_addCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/adddeck_textView1"
+        android:layout_below="@+id/adddeck_addDeck"
+        android:layout_marginTop="71dp"
+        android:onClick="addCard"
+        android:text="@string/adddeck_button_addCards" />
+
+    <Button
+        android:id="@+id/adddeck_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/adddeck_addCards"
+        android:layout_alignBottom="@+id/adddeck_addCards"
+        android:layout_alignLeft="@+id/adddeck_textView1"
+        android:onClick="saveDeck"
+        android:text="@string/save" />
+
+    <TextView
+        android:id="@+id/adddeck_testText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adddeck_addCards"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text=""
+        android:textSize="20sp" />
+
+</RelativeLayout>
