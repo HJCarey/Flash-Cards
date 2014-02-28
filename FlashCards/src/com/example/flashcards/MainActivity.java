@@ -26,8 +26,5 @@ public class MainActivity extends Activity {
 		//startActivity(intent);
 		Intent intent = new Intent(this, AddDeck.class);
 		startActivity(intent);
-	}
-	
-	
-	
+	}	
 }

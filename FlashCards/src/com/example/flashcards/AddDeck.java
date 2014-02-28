@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -43,19 +44,20 @@ public class AddDeck extends Activity{
 		return super.onOptionsItemSelected(item);
 	}//end onOptionsItemSelected
 	
-	public void saveDeck() {
+	public void saveDeck(View view) {
 		TextView tView;
-		String testString = "empty";
+		//String testString = "empty";
 		EditText deckBox	= (EditText) findViewById(R.id.adddeck_addDeck);
-		String deckName 	= deckBox.getText().toString();
-		Deck newDeck = new Deck(deckName);
+		//String deckName 	= deckBox.getText().toString();
+		//Deck newDeck = new Deck(deckName);
 		
-		newDeck.saveDeck(this.getApplicationContext());
+		//newDeck.saveDeck(this.getApplicationContext());
 		
 		tView = (TextView) findViewById(R.id.adddeck_testText);
+		tView.setText(deckBox.toString());
 		//Read name of file
 		
-		try {
+		/*try {
 				FileInputStream fis = openFileInput(newDeck.getDeckName());
 				byte[] dataArray = new byte[fis.available()];
 				while (fis.read(dataArray) != -1) {
@@ -67,7 +69,7 @@ public class AddDeck extends Activity{
 			Log.e("Exception", "File not found.");
 		} catch (IOException e) {
 			Log.e("Exception", "Input exception error.");
-		}
+		}*/
 		
 		
 	}
